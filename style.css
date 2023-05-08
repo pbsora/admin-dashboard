@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vh;
+}
+
+.left {
+  background-color: rgb(159, 37, 37);
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header a {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  padding-left: 20px;
+  font-size: 1.8rem;
+}
+
+.options {
+  padding-left: 40px;
+}
+.options img {
+  height: 40px;
+}
+.options a {
+  color: white;
+  padding-left: 20px;
+  font-size: 1.3rem !important;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.icone {
+  height: 35px;
+}
+
+.icone:hover {
+  transform: translate3D(0, -1px, 0) scale(1.06);
+}
+
+.icon a:hover {
+  color: rgb(241, 62, 62);
+}
+
+.icon a {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.settings {
+  padding-left: 40px;
+}
+.settings img {
+  height: 40px;
+}
+
+.settings a {
+  color: white;
+  padding-left: 20px;
+  font-size: 1.3rem !important;
+}
+
+.top {
+  background-color: rgb(255, 255, 255);
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-family: "Roboto", sans-serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  overflow: visible;
+}
+
+.search {
+  grid-column: 1/5;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+.search input {
+  width: 650px;
+  height: 30px;
+  margin-left: 30px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: #d1d5db;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+input[type="text"]:focus {
+  border: 2px solid rgb(159, 37, 37);
+  outline: none;
+}
+
+.search img {
+  height: 2rem;
+}
+
+.user-icon {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 80px;
+}
+
+.luke {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-icon > .icon {
+  height: 2rem;
+}
+
+.username {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.username:hover {
+  color: rgb(205, 34, 34);
+}
+
+.welcome-msg {
+  grid-column: 1/5;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.welcome-msg img {
+  margin-left: 60px;
+  margin-right: 30px;
+  height: 80px;
+}
+
+.welcome-msg p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.welcome-msg h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: Righteous !important;
+}
+
+.action-btn {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.action-btn button {
+  height: 35px;
+  width: 120px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgb(12, 140, 214);
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+.action-btn button:hover {
+  background-color: rgb(63, 87, 168);
+}
+
+.mid {
+  background-color: rgb(247, 243, 243);
+  grid-area: 2/2/6/6;
+  padding: 20px;
+  display: flex;
+}
+
+.mid-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  float: left;
+  width: 60vw;
+  gap: 40px;
+}
+
+.card {
+  border-radius: 10px;
+  border-left: rgb(159, 37, 37) 10px solid;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.card:hover {
+  transform: translate3D(0, -1px, 0) scale(1.06);
+}
+
+.mid-right {
+  display: grid;
+  width: 20vw;
+  gap: 40px;
+  padding-left: 40px;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project-btn {
+  bottom: 20px;
+  right: 50px;
+  position: absolute;
+  background-color: rgb(12, 140, 214);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 120px;
+}
+
+.project-btn:hover {
+  background-color: rgb(63, 87, 168);
+}
+
+.card h2 {
+  font-family: "Roboto", sans-serif;
+}
+.card p {
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
